@@ -1,6 +1,6 @@
 const sidebar = document.querySelector('.sidebar');
 const toggleBtn = document.querySelector('.toggle-btn');
-let isLoad = Boolean();
+var isLoad = new Boolean();
 
 window.addEventListener('loadstart', () => {
     isLoad = true;
