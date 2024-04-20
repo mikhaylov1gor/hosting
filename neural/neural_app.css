@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+#drawing_panel {
+    display: flex;
+    justify-content: center;
+}
+#button_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#slider_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 0px;
+    padding: 0;
+    color: azure;
+}
+
+p {
+    margin-bottom: 10px;
+    padding: 0;
+    color: azure;
+}
+
+.slider {
+    -webkit-appearance: none;
+    -webkit-slider-container:none;
+    margin-top: 10px;
+    border-radius: 12px;
+    height: 5px;
+}
+
+.slider::-webkit-slider-container{
+    box-shadow: 0 0 2px white;
+    border-radius: 12px;
+}
+
+
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #111111;
+    cursor: auto;
+    opacity: 1;
+}
+
+.slider:hover{
+    opacity: 1;
+    box-shadow: 0 0 5px #727272,
+    0 0 5px #b7b7b7,
+    0 0 10px #cecece,
+    0 0 15px #ffffff;
+}
+
+#header{
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+#interface_block{
+    height: 500px;
+    width: 250px;
+    float: right;
+    flex-direction: column;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px #8c8c8c;
+}
+
+#main_canvas {
+    background: white;
+    width: 500px;
+    height: 500px;
+    display: block;
+    border: 1px solid #ccc;
+    cursor: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8c8c8c;
+}
+#second_canvas {
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    cursor: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8c8c8c;
+}
+
+#second_canvas_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#output_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button{
+    background-color: #111111;
+    border-radius: 10px;
+    margin: 15px auto 5px;
+    cursor: pointer;
+    display: block;
+}
+
+
+button:hover{
+    background-color: #111111;
+    box-shadow: 0 0 5px #727272,
+    0 0 5px #b7b7b7,
+    0 0 10px #cecece,
+    0 0 15px #ffffff;
+}
+
+button img{
+    width: 50px;
+    height: 50px;
+}
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>A*</title>
+    <link rel="stylesheet" href="a_star_app.css">
+    <link rel="stylesheet" href="/UI/navbar/navbar.css">
+</head>
+<body>
+<nav class="sidebar active load">
+    <div class="logo-menu">
+        <h2 class="logo">Code/Websitehog</h2>
+        <img class="toggle-btn" src="/source/navbar_icons/toggleBtn_icon.png" alt="">
+    </div>
+    <ul class="list">
+        <li class="list-item">
+            <a href="../home/home.html">
+                <img class="toggle-btn" src="/source/navbar_icons/home_icon.png" alt="">
+                <span class="link-name" style="--i:1">
+                    Home
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../a-star/a-star.html">
+                <img src="/source/navbar_icons/a-star_icon.png" alt="">
+                <span class="link-name" style="--i:2">
+                    A-Star
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../clustering/clustering.html">
+                <img src="/source/navbar_icons/clustering_icon.png" alt="">
+                <span class="link-name" style="--i:3">
+                    Clustering
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../genetic/genetic.html">
+                <img src="/source/navbar_icons/genetic_icon.png" alt="">
+                <span class="link-name" style="--i:4">
+                    Genetic algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../ant/ant_basic/ant.html">
+                <img src="/source/navbar_icons/ant_icon.png" alt="">
+                <span class="link-name" style="--i:5">
+                    Ant algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../decision-tree/decision_tree.html">
+                <img src="/source/navbar_icons/tree_icon.png" alt="">
+                <span class="link-name" style="--i:6">
+                    Decision tree
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../neural/neural.html">
+                <img src="/source/navbar_icons/neural_icon.png" alt="">
+                <span class="link-name" style="--i:7">
+                    Neural network
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<script src="/UI/navbar/navbar_script.js"></script>
+
+
+<div id="header">
+    <h1>Code/Websitehog/a_star_algorithm</h1>
+</div>
+
+<div class="container">
+    <div id="mazeBlock">
+        <div id="maze"></div>
+    </div>
+    <div id="interfaceBlock">
+        <div class="button-container">
+            <button id="start" title="start algorithm"><img src="../source/a-star_images/start.png" alt="Кнопка «START»"></button>
+            <button id="auto" title="autogenerate maze"><img src="../source/a-star_images/auto.png" alt="Кнопка «AUTOGENERATE MAZE»"></button>
+            <button id="add" title="add start and finish"><img src="../source/a-star_images/set.png" alt="Кнопка «ADD START AND FINISH»"></button>
+            <button id="delete" title="delete field"><img src="../source/a-star_images/delete.png" alt="Кнопка «DELETE FIELD»"></button>
+        </div>
+        <div class="slider-container">
+            <label for="range"></label><input type="range" min="0" max="100" value="100" class="slider" id="range">
+            <p>speed: <span id="value"></span> %</p>
+            <!--для изменения размера поля менять значение value-->
+            <label for="range"></label><label for="size"></label><input type="range" min="4" max="100" value="20" class="slider" id="size">
+            <p>size: <span id="sizeValue"></span></p>
+        </div>
+    </div>
+</div>
+
+<script type='module' src="maze.js"></script>
+<script type='module' src="a_star_algorithm.js"></script>
+<script type='module' src="prima_maze_generation.js"></script>
+
+</body>
+</html>

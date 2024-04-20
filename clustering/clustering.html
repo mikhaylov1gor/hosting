@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Clustering</title>
+    <link rel="stylesheet" href="clustering app.css">
+    <link rel="stylesheet" href="/UI/navbar/navbar.css">
+</head>
+
+<body>
+<nav class="sidebar active load">
+    <div class="logo-menu">
+        <h2 class="logo">Code/Websitehog</h2>
+        <img class="toggle-btn" src="/source/navbar_icons/toggleBtn_icon.png" alt="">
+    </div>
+    <ul class="list">
+        <li class="list-item">
+            <a href="../home/home.html">
+                <img class="toggle-btn" src="/source/navbar_icons/home_icon.png" alt="">
+                <span class="link-name" style="--i:1">
+                    Home
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../a-star/a-star.html">
+                <img src="/source/navbar_icons/a-star_icon.png" alt="">
+                <span class="link-name" style="--i:2">
+                    A-Star
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../clustering/clustering.html">
+                <img src="/source/navbar_icons/clustering_icon.png" alt="">
+                <span class="link-name" style="--i:3">
+                    Clustering
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../genetic/genetic.html">
+                <img src="/source/navbar_icons/genetic_icon.png" alt="">
+                <span class="link-name" style="--i:4">
+                    Genetic algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../ant/ant_basic/ant.html">
+                <img src="/source/navbar_icons/ant_icon.png" alt="">
+                <span class="link-name" style="--i:5">
+                    Ant algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../decision-tree/decision_tree.html">
+                <img src="/source/navbar_icons/tree_icon.png" alt="">
+                <span class="link-name" style="--i:6">
+                    Decision tree
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../neural/neural.html">
+                <img src="/source/navbar_icons/neural_icon.png" alt="">
+                <span class="link-name" style="--i:7">
+                    Neural network
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+    <div id="header">
+        <h1>Code/Websitehog/clustering_algorithm</h1>
+    </div>
+
+    <div id = 'drawing_panel'>
+        <canvas id="cluster_canvas"></canvas>
+        <div id = interface_block>
+            <div id="button_container">
+                <div class="button-container">
+                    <button id="draw_button"><img src="../source/clustering_algorithm_images/start.png" alt="Кнопка «START»"></button>
+                    <button id="clear_button"><img src="../source/clustering_algorithm_images/delete.png" alt="Кнопка «DELETE»"></button>
+                    <button id = "info_button"><img src="../source/ant_algorithm_images/info.png" alt="Кнопка <INFO>"></button>
+                </div>
+            </div>
+
+            <div id="select_container">
+
+                <div class="select_wrapper">
+                    <label for="select_metric">Select metric :</label>
+                    <select class="selector" id="select_metric">
+                        <option value="euklid">Euclid</option>
+                        <option value="double_euklid">Square Euclid</option>
+                        <option value="manhattan">Manhattan</option>
+                        <option value="chebysh">Chebyshev</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="slider_container">
+                <label for="select_kmeans_clusters">K-Means :</label><input type="range" min="1" max="50" value="11" class="slider" id="select_kmeans_clusters">
+                <p>Clusters: <span id="kmeans_clusters_count"></span></p>
+                <label for="select_hierarchical_clusters">Hierarchical :</label><input type="range" min="1" max="50" value="11" class="slider" id="select_hierarchical_clusters">
+                <p>Clusters: <span id="hierarchical_clusters_count"></span></p>
+                <label for="select_dbscan_radius">DBSCAN :</label> <input type="range" min="1" max="200" value="11" class="slider" id="select_dbscan_radius">
+                <p>Radius: <span id="dbscan_radius"></span></p>
+                <label for="select_dbscan_radius_dots"></label><input type="range" min="1" max="50" value="11" class="slider" id="select_dbscan_radius_dots">
+                <p>Dots in radius: <span id="dbscan_dots"></span></p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="scripts/script.js"></script>
+    <script src="/UI/navbar/navbar_script.js"></script>
+</body>
+</html>

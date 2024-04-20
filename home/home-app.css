@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+#header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container h1{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://avatars.mds.yandex.net/i?id=794c5cbdac9af6e39814a15965b03e3407bbda44-5877976-images-thumbs&n=13");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-position: left top;
+    }
+    25%{
+        background-position: right bottom;
+    }
+    50% {
+        background-position: left bottom;
+    }
+    75% {
+        background-position: right top;
+    }
+}
+
+h1{
+    color: azure;
+    font-size: 50px;
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    background-color: rgba(17, 17, 17, 0);
+    color: #03e9f4;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+button:hover{
+    background: #03e9f4;
+    opacity: 1;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 65px #03e9f4;
+}
+
+#contactsGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link{
+    justify-content: center;
+    margin-right: 20px;
+    color: azure;
+}
+
+a:visited {
+    color: azure;
+}
+
+a:hover {
+    background: #c5ef05;
+    opacity: 100;
+    color: #050801;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8eff00,
+    0 0 25px #6ff403,
+    0 0 50px #0fa80a,
+    0 0 200px #2c6700;
+}

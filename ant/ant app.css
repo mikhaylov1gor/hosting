@@ -1,0 +1,147 @@
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+}
+.slider {
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    background: navajowhite;
+    outline: none;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+    padding: 0;
+    color: #ffffff;
+}
+
+#header{
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+#Block{
+    height: 500px;
+    width: 750px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px #8c8c8c;
+}
+
+#interfaceBlock{
+    height: 500px;
+    width: 250px;
+    float: right;
+    flex-direction: column;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px #8c8c8c;
+}
+
+.value-block{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+#value-bLock-title{
+    text-align: center;
+    margin-top: 2px;
+}
+
+#value-block-value{
+    text-align: center;
+    margin-top: 2px;
+}
+
+button{
+    background-color: #111111;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: gray;
+    box-shadow: 0 0 5px #727272,
+    0 0 5px #b7b7b7,
+    0 0 10px #cecece,
+    0 0 15px #ffffff;
+}
+
+button img{
+    margin-top: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+button:disabled{
+    background-color: gray;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+.link-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#link:link{
+    color: azure;
+}
+
+#link:visited {
+    color: azure;
+}
+
+#link:hover {
+    background: #c5ef05;
+    opacity: 100;
+    color: #050801;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8eff00,
+    0 0 25px #6ff403,
+    0 0 50px #0fa80a,
+    0 0 200px #2c6700;
+}

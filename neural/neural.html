@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Neural network</title>
+    <link rel="stylesheet" href="neural_app.css">
+    <link rel="stylesheet" href="../UI/navbar/navbar.css">
+</head>
+
+<body>
+<nav class="sidebar active load">
+    <div class="logo-menu">
+        <h2 class="logo">Code/Websitehog</h2>
+        <img class="toggle-btn" src="/source/navbar_icons/toggleBtn_icon.png" alt="">
+    </div>
+    <ul class="list">
+        <li class="list-item">
+            <a href="../home/home.html">
+                <img class="toggle-btn" src="/source/navbar_icons/home_icon.png" alt="">
+                <span class="link-name" style="--i:1">
+                    Home
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../a-star/a-star.html">
+                <img src="/source/navbar_icons/a-star_icon.png" alt="">
+                <span class="link-name" style="--i:2">
+                    A-Star
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../clustering/clustering.html">
+                <img src="/source/navbar_icons/clustering_icon.png" alt="">
+                <span class="link-name" style="--i:3">
+                    Clustering
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../genetic/genetic.html">
+                <img src="/source/navbar_icons/genetic_icon.png" alt="">
+                <span class="link-name" style="--i:4">
+                    Genetic algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../ant/ant_basic/ant.html">
+                <img src="/source/navbar_icons/ant_icon.png" alt="">
+                <span class="link-name" style="--i:5">
+                    Ant algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../decision-tree/decision_tree.html">
+                <img src="/source/navbar_icons/tree_icon.png" alt="">
+                <span class="link-name" style="--i:6">
+                    Decision tree
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../neural/neural.html">
+                <img src="/source/navbar_icons/neural_icon.png" alt="">
+                <span class="link-name" style="--i:7">
+                    Neural network
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="header">
+    <h1>Code/Websitehog/neural_algorithm</h1>
+</div>
+
+<div id = 'drawing_panel'>
+    <canvas id="main_canvas"></canvas>
+    <div id = interface_block>
+        <div id="button_container">
+            <div class="button-container">
+                <div><button id="clear_button"><img src="../source/neural_network_images/delete.png" alt="Кнопка «DELETE»"></button></div>
+            </div>
+        </div>
+
+        <div id="slider_container">
+            <label for="select_paintbrush_size">Paintbrush Size: </label><input type="range" min="1" max="50" value="27" class="slider" id="select_paintbrush_size">
+            <p>Size: <span id="paintbrush_size"></span></p>
+        </div>
+
+        <div id = "second_canvas_container">
+            <label for = "second_canvas" style="margin-bottom: 10px">Input in Neural Network: </label><canvas id="second_canvas"></canvas>
+        </div>
+
+        <div id = "output_container">
+            <label for = "output" style="margin-bottom: 10px">Digit: </label><p id="output">-</p>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<script type="module" src="script.js" ></script>
+<script src="../UI/navbar/navbar_script.js"></script>
+</body>
+</html>

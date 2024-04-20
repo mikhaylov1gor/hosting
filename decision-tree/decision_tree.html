@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Decision tree</title>
+    <link rel="stylesheet" href="decision_tree_app.css">
+    <link rel="stylesheet" href="/UI/navbar/navbar.css">
+</head>
+
+<body>
+<div id="header">
+    <h1>Code/Websitehog/decision_tree_algorithm</h1>
+</div>
+<div id="tree-block">
+    <div id="tree-container">
+        <canvas id="canvas" width="1800px" height="1000px"></canvas>
+        <div id="tree"></div>
+    </div>
+
+    <div class="interface">
+        <div class="result">
+            <p id="result-title">result<br><span id="result-value"></span></p>
+        </div>
+        <div class="control">
+            <label class="prepared-datasets">
+                <p class="text">prepared datasets</p>
+                <select id="select-dataset">
+                    <option value="">select</option>
+                    <option class="dataset" value="first">weather and play</option>
+                    <option class="dataset" value="second">job interview</option>
+                </select>
+            </label>
+            <div class="buttons-container">
+                <div class="button-row">
+                    <label for="upload-tree" class="upload-label">
+                        <img id="upload-tree-img" src="../source/decision_tree_icons/upload.png" alt="">
+                        <input type="file" id="upload-tree" class="upload-input" accept=".csv">
+                    </label>
+                    <button id="delete-tree">
+                        <img id="delete-tree-img" src="../source/decision_tree_icons/delete.png" alt="">
+                    </button>
+                </div>
+                <div class="button-row">
+                    <button id="build-tree">
+                        <img id="build-tree-img" src="../source/decision_tree_icons/build.png" alt="">
+                    </button>
+                    <button id="tree-optimization">
+                        <img id="tree-optimization-img" src="../source/decision_tree_icons/optimization.png" alt="">
+                    </button>
+                </div>
+                <div class="button-row">
+                    <button id="start-bypassing">
+                        <img id="start-img" src="../source/decision_tree_icons/start.png" alt="">
+                    </button>
+                    <button id="create-random-path">
+                        <img id="create-random-path-img" src="../source/decision_tree_icons/random_path.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <label class="input-decision">
+                <p class="text">input decisions</p>
+                <textarea id="path"></textarea>
+            </label>
+            <div class="sliders-container">
+                <div id="speed">
+                    <label id="label-speed-slider" for="slider-speed"></label><input class="slider" id="slider-speed" type="range" value="50" min="0" max="100">
+                    <p>speed: <span id="speed-value">50</span>%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="sidebar active load">
+    <div class="logo-menu">
+        <h2 class="logo">Code/Websitehog</h2>
+        <img class="toggle-btn" src="/source/navbar_icons/toggleBtn_icon.png" alt="">
+    </div>
+    <ul class="list">
+        <li class="list-item">
+            <a href="../home/home.html">
+                <img class="toggle-btn" src="/source/navbar_icons/home_icon.png" alt="">
+                <span class="link-name" style="--i:1">
+                    Home
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../a-star/a-star.html">
+                <img src="/source/navbar_icons/a-star_icon.png" alt="">
+                <span class="link-name" style="--i:2">
+                    A-Star
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../clustering/clustering.html">
+                <img src="/source/navbar_icons/clustering_icon.png" alt="">
+                <span class="link-name" style="--i:3">
+                    Clustering
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../genetic/genetic.html">
+                <img src="/source/navbar_icons/genetic_icon.png" alt="">
+                <span class="link-name" style="--i:4">
+                    Genetic algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../ant/ant_basic/ant.html">
+                <img src="/source/navbar_icons/ant_icon.png" alt="">
+                <span class="link-name" style="--i:5">
+                    Ant algorithm
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../decision-tree/decision_tree.html">
+                <img src="/source/navbar_icons/tree_icon.png" alt="">
+                <span class="link-name" style="--i:6">
+                    Decision tree
+                </span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="../neural/neural.html">
+                <img src="/source/navbar_icons/neural_icon.png" alt="">
+                <span class="link-name" style="--i:7">
+                    Neural network
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<script type="module" src="settings.js"></script>
+<script type="module" src="tree_data.js"></script>
+<script type="module" src="tree_creation.js"></script>
+<script type="module" src="calculate_gain_ratio.js"></script>
+<script type="module" src="tree_container_settings.js"></script>
+<script type="module" src="prepared_datasets.js"></script>
+<script type="module" src="/UI/navbar/navbar_script.js"></script>
+</body>
+</html>
